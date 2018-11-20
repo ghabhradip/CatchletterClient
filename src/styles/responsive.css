@@ -1,0 +1,178 @@
+@media screen and (max-width:1199px){
+    
+}
+@media screen and (max-width:991px){
+    body,p{
+        font-size: 13px;
+    }
+    .navbar-toggler.navbar-toggler-right {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            outline: none;
+        }
+        .ml-auto.notify-area {
+            position: absolute;	
+            right: 60px;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 288px;
+            padding-right: 10px;
+            top: 12px;
+    }
+    .table-view ul li p{
+        max-width: 310px;
+    }
+    .pull-right.settingsc {
+        padding-top: 0;
+        padding-right: 0px;
+        margin-right: 0px;
+        position: static;
+    }
+    .navbar-collapse.collapse .navbar-nav{display: none;}
+    .navbar-collapse.collapse.in .navbar-nav{display: flex;}
+    
+}
+
+    @media screen and (max-width:767px){
+    .table-view ul li{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+    }
+    .top-statics ul li p{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .top-statics ul li p strong {
+        font-size: 14px;
+    }
+    .list-table h2{
+        font-size: 20px;
+    }
+    .top-statics ul li {
+        padding: 8px 5px;
+    }
+    .table-view ul li p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .select-r-box select.form-control{
+        padding: 1px 10px;
+    }
+    header .dropdown > .btn {	
+	width: 23px;
+	height: 23px;
+	line-height: 21px;
+	margin: 0 8px;
+	font-size: 17px;	
+    }
+    .dropdown .btn.btn-primary {	
+	line-height: 25px;
+	font-size: 14px;
+    }
+    header .dropdown > a img {
+        max-width: 25px;
+        height: 25px;       
+    }
+    .custom-h .col-md-6.justify-content-between{
+        padding-left: 60px;
+    }
+    .custom-h .btn{
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding: 2px 10px;
+        font-size: 13px;
+    }
+    .website .col-md-4{
+        padding: 10px 10px;
+    }
+   .website-btn {	
+	letter-spacing: 0;	
+	padding: 3px 7px;
+	line-height: 15px;
+	height: 32px;	
+	font-size: 13px;
+    }
+    .website h1 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:576px){
+    .table-view ul li p {
+        max-width: 110px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .table-view ul li{
+        padding: 5px 5px;
+    }
+    .select-r-box select.form-control {
+        padding: 1px 5px;
+        font-size: 13px;
+    }
+    .list-table h2 {
+        font-size: 16px;
+    }
+    header a.navbar-brand {    
+        padding-right: 0px;
+    }
+    .navbar-expand-lg .navbar-nav a{
+        padding: 5px 10px;
+        border-top: 1px solid #f9f9f9;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+    .graph-wrap canvas{
+        width:100% !important;
+        height:auto !important;
+    }
+    
+}
+@media screen and (max-width:479px){
+    .top-statics ul li {
+        padding: 8px 5px;
+        width: 50%;
+        text-align: left;
+    }
+    .top-statics ul li .text-center{
+        text-align: left !important;
+    }
+    .website-btn {
+        letter-spacing: 0;
+        padding: 2px 4px;
+        line-height: 12px;
+        height: 29px;
+        font-size: 11px;
+        text-transform: capitalize;
+    }
+    .website h1 {
+        font-size: 20px;
+    }
+    .pic{
+        width: 41px;
+        height: 40px;
+        margin-left: 0;
+    }
+    .website .media-body p{
+        font-size: 12px;
+    }
+    .website .media-body h5{
+        font-size: 18px;
+    }
+    .website .col-8,.website .col-4{
+        max-width: 100%;
+        flex: 100%;
+        text-align: left !important;
+    }
+    .main-frm .btn {
+        margin-top: 30px;
+        font-size: 12px;
+        padding: 2px 10px;
+        display: block;
+        width: 100%;
+    }
+
+}
