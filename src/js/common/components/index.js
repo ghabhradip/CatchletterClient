@@ -23,6 +23,8 @@ import BillingExpire from './BillingExpire/BillingExpire';
 // import Pdf from './Pdf/Pdf';
 
 import Alert from './Alert/Alert';
+import CustomDomain from './CustomDomain/CustomDomain';
+import CreateCustomDomain from './CreateCustomDomain/CreateCustomDomain';
 import CreateAlert from './CreateAlert/CreateAlert';
 // import EditAlert from './EditAlert/EditAlert';
 import SetPassword from './setPassword/setPassword';
@@ -140,6 +142,16 @@ class Main extends Component {
                 <Route path="/alerts" render={({ history }) => (
                     <div>
                         <Alert onHistory={history} />
+                    </div>
+                )} />
+                <Route path="/custom-domain" render={({ history }) => (
+                    <div>
+                        <CustomDomain onHistory={history} />
+                    </div>
+                )} />
+                <Route path="/create-custom-domain" render={({ history }) => (
+                    <div>
+                        <CreateCustomDomain onHistory={history} />
                     </div>
                 )} />
                 <Route path="/createAlert" render={({ history }) => (

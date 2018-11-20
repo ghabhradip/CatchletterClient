@@ -39,6 +39,7 @@ class Header extends Component {
             inboxClass: 'nav-link',
             billingClass: 'nav-link',
             alertClass: 'nav-link',
+            customDomainClass: 'nav-link',
             proFileImage: '',
             expireMessage: '',
             addMaximumWebsite: 0,
@@ -82,7 +83,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link active',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
 
@@ -96,7 +98,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
 
@@ -111,7 +114,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
 
@@ -125,7 +129,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link active',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
         }
@@ -138,7 +143,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
         }
@@ -151,7 +157,22 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link active',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
+                });
+            }, 100)
+        }
+        else if (url.includes('custom-domain')) {
+            setTimeout(() => {
+                this.setState({
+                    hiddenHeader: false,
+                    dashboardClassName: 'nav-link',
+                    displayWebsiteClassName: 'nav-link',
+                    favouriteEmail: 'nav-link',
+                    inboxClass: 'nav-link',
+                    billingClass: 'nav-link',
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link active'
                 });
             }, 100)
         }
@@ -183,7 +204,8 @@ class Header extends Component {
                         favouriteEmail: 'nav-link',
                         inboxClass: 'nav-link',
                         billingClass: 'nav-link',
-                        alertClass: 'nav-link'
+                        alertClass: 'nav-link',
+                        customDomainClass: 'nav-link'
                     });
                 }, 100)
             }
@@ -196,7 +218,8 @@ class Header extends Component {
                         favouriteEmail: 'nav-link',
                         inboxClass: 'nav-link active',
                         billingClass: 'nav-link',
-                        alertClass: 'nav-link'
+                        alertClass: 'nav-link',
+                        customDomainClass: 'nav-link'
                     });
                 }, 100)
             }
@@ -209,7 +232,8 @@ class Header extends Component {
                         favouriteEmail: 'nav-link active',
                         inboxClass: 'nav-link',
                         billingClass: 'nav-link',
-                        alertClass: 'nav-link'
+                        alertClass: 'nav-link',
+                        customDomainClass: 'nav-link'
                     });
                 }, 100)
             }
@@ -224,7 +248,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link active',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
         }
@@ -238,7 +263,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link active',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
         }
@@ -252,7 +278,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link active',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
         }
@@ -266,7 +293,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
         }
@@ -280,7 +308,8 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link'
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link'
                 });
             }, 100)
         }
@@ -294,7 +323,23 @@ class Header extends Component {
                     favouriteEmail: 'nav-link',
                     inboxClass: 'nav-link',
                     billingClass: 'nav-link',
-                    alertClass: 'nav-link active'
+                    alertClass: 'nav-link active',
+                    customDomainClass: 'nav-link'
+                });
+            }, 100)
+        }
+
+        if (this.props && this.props.location && this.props.location.pathname == "/custom-domain") {
+            setTimeout(() => {
+                this.setState({
+                    hiddenHeader: false,
+                    dashboardClassName: 'nav-link',
+                    displayWebsiteClassName: 'nav-link',
+                    favouriteEmail: 'nav-link',
+                    inboxClass: 'nav-link',
+                    billingClass: 'nav-link',
+                    alertClass: 'nav-link',
+                    customDomainClass: 'nav-link active'
                 });
             }, 100)
         }
@@ -485,7 +530,8 @@ class Header extends Component {
                 favouriteEmail: 'nav-link',
                 inboxClass: 'nav-link',
                 billingClass: 'nav-link',
-                alertClass: 'nav-link'
+                alertClass: 'nav-link',
+                customDomainClass: 'nav-link'
             });
             this.props.history.push({ pathname: "/home" });
         }
@@ -499,7 +545,8 @@ class Header extends Component {
                 favouriteEmail: 'nav-link',
                 inboxClass: 'nav-link',
                 billingClass: 'nav-link',
-                alertClass: 'nav-link'
+                alertClass: 'nav-link',
+                customDomainClass: 'nav-link'
             });
             this.props.history.push({ pathname: "/list" });
         }
@@ -513,7 +560,8 @@ class Header extends Component {
                 dashboardClassName: 'nav-link',
                 inboxClass: 'nav-link',
                 billingClass: 'nav-link',
-                alertClass: 'nav-link'
+                alertClass: 'nav-link',
+                customDomainClass: 'nav-link'
             });
         }
         this.props.history.push({ pathname: "/favourite" });
@@ -534,7 +582,8 @@ class Header extends Component {
                 displayWebsiteClassName: 'nav-link',
                 inboxClass: 'nav-link active',
                 billingClass: 'nav-link',
-                alertClass: 'nav-link'
+                alertClass: 'nav-link',
+                customDomainClass: 'nav-link'
             });
         }
         this.props.history.push({
@@ -550,7 +599,8 @@ class Header extends Component {
                 displayWebsiteClassName: 'nav-link',
                 inboxClass: 'nav-link',
                 billingClass: 'nav-link active',
-                alertClass: 'nav-link'
+                alertClass: 'nav-link',
+                customDomainClass: 'nav-link'
             });
         }
         this.props.history.push({ pathname: '/billing' });
@@ -572,10 +622,27 @@ class Header extends Component {
                 displayWebsiteClassName: 'nav-link',
                 inboxClass: 'nav-link',
                 billingClass: 'nav-link',
-                alertClass: 'nav-link active'
+                alertClass: 'nav-link active',
+                customDomainClass: 'nav-link'
             });
         }
         this.props.history.push({ pathname: "/alerts" });
+    }
+
+    goCustomDomain(value) {
+        if (value == "custom-domain") {
+            this.setState({
+                dashboardClassName: 'nav-link',
+                favouriteEmail: 'nav-link',
+                displayWebsiteClassName: 'nav-link',
+                inboxClass: 'nav-link',
+                billingClass: 'nav-link',
+                alertClass: 'nav-link',
+                customDomainClass: 'nav-link active'
+
+            });
+        }
+        this.props.history.push({ pathname: "/custom-domain" });
     }
 
     showImage() {
@@ -635,6 +702,9 @@ class Header extends Component {
                                 </li>
                                 <li className="nav-item ">
                                     <a className={this.state.alertClass} href="javascript:void(0)" onClick={() => this.goAlert('alert')}> Alerts </a>
+                                </li>
+                                <li className="nav-item ">
+                                    <a className={this.state.customDomainClass} href="javascript:void(0)" onClick={() => this.goCustomDomain('custom-domain')}> Custom Domains </a>
                                 </li>
                                 <li className="nav-item ">
                                     <a className={this.state.billingClass} href="javascript:void(0)" onClick={() => this.goBilling('billing')}> Billing </a>
